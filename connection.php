@@ -7,12 +7,12 @@ function db_connect() {
 	$password	= "Gme1234567890987654321";
 	$dbname		= "gme";
 	$host		= "ordremekka.mysql.database.azure.com";
-    $connection = mysqli_init();
-    mysqli_ssl_set($connection,NULL,NULL, "https://ordremekka.azurewebsites.net/assets/DigiCertGlobalRootCA.crt.pem", NULL, NULL);
+    
     
 
     if(!isset($connection)) { 
-        
+        $connection = mysqli_init();
+    mysqli_ssl_set($connection,NULL,NULL, "https://ordremekka.azurewebsites.net/assets/DigiCertGlobalRootCA.crt.pem", NULL, NULL);
         mysqli_real_connect($connection, $host, $username, $password, $dbname, 3306, MYSQLI_CLIENT_SSL);
     }
     if($connection === false) {
