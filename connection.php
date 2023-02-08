@@ -1,5 +1,5 @@
 <?php
-echo "TESST";
+
 session_start();
 function db_connect() {
     static $connection;
