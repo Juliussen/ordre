@@ -4,37 +4,37 @@ include('connection.php');
 	
 
 
-// $csrf		=	$connect->real_escape_string($_POST["csrf"]);
+$csrf		=	$connect->real_escape_string($_POST["csrf"]);
 
 
-// if ($csrf == $_SESSION["token"]) {
-// 	$username	= $connect->real_escape_string($_POST['username']);
-// 	$password	= $connect->real_escape_string($_POST['password']);
-//     $usertype	= $connect->real_escape_string($_POST['usertype']);
+if ($csrf == $_SESSION["token"]) {
+	$username	= $connect->real_escape_string($_POST['username']);
+	$password	= $connect->real_escape_string($_POST['password']);
+    $usertype	= $connect->real_escape_string($_POST['usertype']);
 
 	
-// 	/* Check Username and Password */
-// 	$query		= db_query("select * from google_auth where (email='".$username."' or username='".$username."') and password='".$password."' ");	
+	/* Check Username and Password */
+	$query		= db_query("select * from google_auth where (email='".$username."' or username='".$username."') and password='".$password."' ");	
 
-// 	$resuser = mysqli_num_rows($query);
-// 	if($resuser > 0){
-// 		$row = mysqli_fetch_array($query);
-// 		$_SESSION['email'] 	= $row['email'];
-// 		$_SESSION['secret'] = $row['googlecode'];
+	$resuser = mysqli_num_rows($query);
+	if($resuser > 0){
+		$row = mysqli_fetch_array($query);
+		$_SESSION['email'] 	= $row['email'];
+		$_SESSION['secret'] = $row['googlecode'];
 		
-// 		header('Location:device_confirmations.php');
-// 		exit();
-// 	}else{
-// 		$msg="Invalid Username or Password";												
-// 		header('Location:login.php?error=1');
-// 		exit();
-// 	}
+		header('Location:device_confirmations.php');
+		exit();
+	}else{
+		$msg="Invalid Username or Password";												
+		header('Location:login.php?error=1');
+		exit();
+	}
 	
-// }
+}
 
-// /* print message */
-// $msg = $connect->real_escape_string($_GET["error"]);
-// if($msg == 1){ $strmsg = "Invalid Username or Password"; }
+/* print message */
+$msg = $connect->real_escape_string($_GET["error"]);
+if($msg == 1){ $strmsg = "Invalid Username or Password"; }
 
 
 ?>
