@@ -3,7 +3,7 @@
 session_start();
 function db_connect() {
     static $connection;
-	$username	= "ordremeekka";   
+	$username	= "ordremekka";   
 	$password	= "Gme1234567890987654321";
 	$dbname		= "gme";
 	$host		= "ordremekka.mysql.database.azure.com";
