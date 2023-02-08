@@ -1,0 +1,53 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgb(1, 134, 151);
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 100%;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: rgb(7, 7, 7);
+  }
+  
+  nav.minkonto {
+    position: relative;
+    display: block;
+    float: right;
+  }
+
+  nav.selgermeny {
+    position: relative;
+    display: block;
+    float: left;
+  }
+  nav ul {
+    position: relative;
+    display: block;
+    float: left;
+    list-style: none;
+  }
+  nav ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0px 12px;
+  }
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
