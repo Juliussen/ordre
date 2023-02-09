@@ -9,13 +9,13 @@ body{
 
 }
 .bilde{
-    top: 30%;
-
+    
+    margin-top: 25%;
 }
 
 </style>
 
-<div class="bilde"><center><img src="assets/img/ordremekka_hvit.png" width="700px"></center></div>
+<div class="bilde"><center><img src="assets/img/ordremekka_hvit.png" width="60%"></center></div>
 
 
 </html>
