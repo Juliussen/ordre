@@ -1,5 +1,5 @@
 <?php
-echo "1";
+
 
 $con = mysqli_init();
 mysqli_ssl_set($con,NULL,NULL, "https://ordremekka.azurewebsites.net/assets/DigiCertGlobalRootCA.crt.pem", NULL, NULL);
