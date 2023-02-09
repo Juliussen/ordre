@@ -22,9 +22,9 @@ $row = mysqli_fetch_array($sql);
 $usertype 		= $row['usertype'];
 $darkmode = $row['darkmode'];
 
-define("BASE_URL", dirname('http://localhost//ordremekka/'));
+define("BASE_URL", dirname('https://ordremekka.azurewebsites.net/'));
 
-$baseurl = "http://localhost/ordremekka";
+$baseurl = "https://ordremekka.azurewebsites.net/";
 
 ?>
 <html>
