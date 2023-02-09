@@ -1,11 +1,12 @@
 <?php
 
-$username = "root"; 
-$password = ""; 
+$username = "ordremekka"; 
+$password = "Gme1234567890987654321"; 
 $database = "gme"; 
-$mysqli = new mysqli("localhost", $username, $password, $database);
+$host = "ordremekka.mysql.database.azure.com";
+$mysqli = new mysqli($host, $username, $password, $database);
 
-$connection = mysqli_connect("localhost","root","");
-$db = mysqli_select_db($connection, 'gme');
+$connection = mysqli_connect($host,$username,$password);
+$db = mysqli_select_db($connection, $database);
 
-$baseurl = "http://localhost/ordremekka/";
+$baseurl = "https://ordremekka.azurewebsites.net/";
