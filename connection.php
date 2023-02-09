@@ -13,7 +13,7 @@ function db_connect() {
     if(!isset($connection)) { 
         $connection = mysqli_init();
 
-        mysqli_real_connect($connection, $host, $username, $password, $dbname, 3306, MYSQLI_CLIENT_SSL);
+        mysqli_real_connect($connection, $host, $username, $password, $dbname, 3306);
     }
     if($connection === false) {
         return mysqli_connect_error(); 
