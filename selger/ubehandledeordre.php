@@ -260,7 +260,7 @@ $datosendtprod = $row['datosendtprod'];
     </div>
     
     <div class="container-fluid">
-            <h2>MINE UBEHANDLEDE ORDRER<br><font size="3px">(Ordrer som er ubehandlet - venter på behandling)</font></h2>
+            <h2>MINE UBEHANDLEDE ORDRER<br><font size="3px">(Ordrer som er ubehandlet - venter på behandling - æøå test)</font></h2>
     </div>
 
             
@@ -281,7 +281,7 @@ $datosendtprod = $row['datosendtprod'];
                     <div class="container-fluid">
                         <thead >
                             <tr class="bg-dark text-white">
-                            <th>Ordre&nbsp;Nr</th>
+                            <th>Ordre&nbsp;Nr æøå test</th>
                             <th>Kunde&nbsp;Nr</th>
                             <th>Kunde&nbsp;Navn</th>
                             <th>Kunde&nbsp;Tlf</th>
