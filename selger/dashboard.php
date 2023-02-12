@@ -38,7 +38,7 @@ $row3 = mysqli_fetch_array($resulatubehandledeavd);
 $totaleubehandledeavd = $row3[0];
 
 //resultat antall ordre under behandling - MINE
-$resulatubehandlede = db_query("SELECT COUNT(1) from ordre where (selger = '".$username."' and status = 'Ubehandlet') ");
+$resulatubehandlede = db_query("SELECT COUNT(1) from ordre where (selger = '".$username."' and status = 'Ubehandlet') or (selgerepost = '".$email."' and status = 'Ubehandlet') ");
 $row31 = mysqli_fetch_array($resulatubehandlede);
 $totaleubehandlede = $row31[0];
 
