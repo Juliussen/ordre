@@ -12,7 +12,6 @@ $sql = db_query("select * from google_auth where googlecode = '".$googlecode."'"
 $row = mysqli_fetch_array($sql);
 
 $firstname 	= $row['username'];
-$selgerepost 	= $row['selgerepost'];
 $lastname 	= $row['lname'];
 $email 		= $row['email'];
 $usertype 		= $row['usertype'];
@@ -269,7 +268,7 @@ $datosendtprod = $row['datosendtprod'];
                     <?php
                include_once('../conn.php');
 
-                $query = "SELECT * FROM ordre where (selger = '".$firstname."' and status = 'Ubehandlet') or (selger = '".$firstname."' and status = 'Forskudd Faktura Betalt') or (selgerepost = '".$selgerepost."' and status = 'Ubehandlet') ORDER BY `datoopprettet` ASC";
+                $query = "SELECT * FROM ordre where (selger = '".$firstname."' and status = 'Ubehandlet') or (selger = '".$firstname."' and status = 'Forskudd Faktura Betalt') or (selgerepost = '".$email."' and status = 'Ubehandlet') ORDER BY `datoopprettet` ASC";
                 $query_run = mysqli_query($connection, $query);
                 $ordrenr = $row["ordrenr"];
                 $ordrenr1 = $row["ordrenr1"];
