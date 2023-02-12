@@ -337,7 +337,7 @@ $datosendtprod = $row['datosendtprod'];
                                 <?php if($row['ordrevedlegg'] == 0){ 
                                     echo '<td>Mangler Vedlegg</td>';
                                     }else{
-                                    echo '<td> <a href="'.$baseurl.'/ordremappe/'.$row['ordrenr'].'.pdf" target="new">Se vedlegg</a></td>';
+                                    echo '<td> <a href="https://ordremekkablobb.blob.core.windows.net/ordremappe/'.$row['ordrenr'].'.pdf" target="new">Se vedlegg</a></td>';
                                 } ?>
                                 <?php if($row['ordrevedlegg'] == 0){ 
                                     echo '<td><<--</td>';
