@@ -33,7 +33,7 @@ $datosendtprod = $row['datosendtprod'];
 <html>
  <head>
   <title>OrdreMekka 1.0</title>
-
+<meta charset="utf-8">
  
   
  </head>
