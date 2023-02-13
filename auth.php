@@ -1,5 +1,5 @@
 <?php
-include("connection.php");
+include("connection_logginn.php");
 
 $checkResult="";
 if($_POST['code']){
