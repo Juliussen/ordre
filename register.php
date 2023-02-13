@@ -1,5 +1,5 @@
 <?php
-include('connection.php');
+include('connection_logginn.php');
 
 $passcode	= $connect->real_escape_string($_POST["passcode"]);	
 $csrf		= $connect->real_escape_string($_POST["csrf"]);
