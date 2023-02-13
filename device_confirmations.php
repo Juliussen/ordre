@@ -1,5 +1,5 @@
 <?php
-include('connection.php');
+include('connection_logginn.php');
 
 $secret = $_SESSION['secret'];
 $user 	= $_SESSION['email'];
