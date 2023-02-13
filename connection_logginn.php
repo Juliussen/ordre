@@ -5,10 +5,10 @@ set_time_limit(0);
 
 function db_connect() {
     static $connection;
-	$username	= "root";   
-	$password	= "";
+	$username	= "logginn";   
+	$password	= "G4rd30b3060220231735+";
 	$dbname		= "gme";
-	$host		= "localhost";
+	$host		= "ordremekka.mysql.database.azure.com";
 
     if(!isset($connection)) { 
         $connection = mysqli_connect($host,$username,$password,$dbname);
